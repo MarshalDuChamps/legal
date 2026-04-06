@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Service — Refined Vandal Auto-Poster</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            background: #0a0a0f;
+            color: #c8c8d4;
+            font-family: 'Space Mono', monospace;
+            font-size: 14px;
+            line-height: 1.8;
+            min-height: 100vh;
+        }
+
+        .grain {
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+            pointer-events: none;
+            z-index: 999;
+        }
+
+        .glow-line {
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #00f0ff, #ff00ff, transparent);
+            width: 100%;
+        }
+
+        .container {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 60px 24px 80px;
+        }
+
+        .brand {
+            font-family: 'Syne', sans-serif;
+            font-weight: 800;
+            font-size: 11px;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            color: #00f0ff;
+            margin-bottom: 40px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .brand::before {
+            content: '';
+            width: 8px;
+            height: 8px;
+            background: #00f0ff;
+            box-shadow: 0 0 12px #00f0ff;
+        }
+
+        h1 {
+            font-family: 'Syne', sans-serif;
+            font-weight: 800;
+            font-size: 36px;
+            color: #ffffff;
+            margin-bottom: 8px;
+            line-height: 1.2;
+        }
+
+        .last-updated {
+            font-size: 12px;
+            color: #555;
+            margin-bottom: 48px;
+            padding-bottom: 32px;
+            border-bottom: 1px solid #1a1a2e;
+        }
+
+        h2 {
+            font-family: 'Syne', sans-serif;
+            font-weight: 700;
+            font-size: 18px;
+            color: #ff00ff;
+            margin-top: 40px;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        h2::before {
+            content: '//';
+            color: #00f0ff;
+            font-family: 'Space Mono', monospace;
+            font-weight: 400;
+        }
+
+        p {
+            margin-bottom: 16px;
+        }
+
+        a {
+            color: #00f0ff;
+            text-decoration: none;
+            border-bottom: 1px solid rgba(0, 240, 255, 0.3);
+            transition: border-color 0.3s;
+        }
+
+        a:hover {
+            border-color: #00f0ff;
+        }
+
+        .footer {
+            margin-top: 64px;
+            padding-top: 32px;
+            border-top: 1px solid #1a1a2e;
+            font-size: 12px;
+            color: #444;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="grain"></div>
+    <div class="glow-line"></div>
+
+    <div class="container">
+        <div class="brand">Refined Vandal</div>
+
+        <h1>Terms of Service</h1>
+        <p class="last-updated">Last updated: April 6, 2026</p>
+
+        <h2>Overview</h2>
+        <p>Refined Vandal Auto-Poster ("the App") is a personal content automation tool operated by Refined Vandal, a street art and creative technology brand based in Hamburg, Germany. The App is used exclusively to publish original content to TikTok via the Content Posting API.</p>
+
+        <h2>Use of the App</h2>
+        <p>The App is not a public service and is not available for third-party use. It is operated solely by the brand owner to schedule and publish original AI-generated art and street art video content to the brand's own TikTok account (@marshal.arts_streetart).</p>
+
+        <h2>Content Ownership</h2>
+        <p>All content published through the App is original work created by the Refined Vandal brand. The App does not collect, store, or distribute content from other users or third parties.</p>
+
+        <h2>Data Collection</h2>
+        <p>The App does not collect personal data from TikTok users. It only accesses the brand owner's own TikTok account via authorized OAuth tokens to perform content posting operations. No user data is sold, shared, or transferred to third parties.</p>
+
+        <h2>Third-Party Services</h2>
+        <p>The App integrates with Make.com (automation), Cloudinary (media hosting), and the TikTok Content Posting API. Each service is governed by its own terms of service.</p>
+
+        <h2>Limitation of Liability</h2>
+        <p>The App is provided "as is" without warranty of any kind. Refined Vandal is not liable for any damages arising from the use of the App or content published through it.</p>
+
+        <h2>Changes to These Terms</h2>
+        <p>These terms may be updated at any time. Continued use of the App constitutes acceptance of any changes.</p>
+
+        <h2>Contact</h2>
+        <p>For questions regarding these terms, contact <a href="mailto:enrique@marshalarts.cloud">enrique@marshalarts.cloud</a>.</p>
+
+        <div class="footer">
+            &copy; 2026 Refined Vandal &mdash; Hamburg, Germany
+        </div>
+    </div>
+</body>
+</html>
